@@ -1,0 +1,25 @@
+//package com.javarush.task.task09.task0912;
+
+/*
+Исключение при работе с числами
+Требования:
+1. Программа должна выводить сообщение на экран.
+2. В программе должен быть блок try-catch.
+3. Программа должна отлавливать исключения конкретного типа, а не все возможные (Exception).
+4. Выведенное сообщение должно содержать тип возникшего исключения.
+5. Имеющийся код в методе main не удалять.
+*/
+
+public class task0912 {
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
+        try {
+            int num = Integer.parseInt("XYZ");
+            System.out.println(num);
+        }
+        catch (NumberFormatException e) {
+            System.out.println(e);
+        }
+        //напишите тут ваш код
+    }
+}
